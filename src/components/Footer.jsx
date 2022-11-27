@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="p-4 bg-violet-100 sm:p-6 dark:bg-gray-900 fixed bottom-0 w-full">
             <div className="sm:flex sm:items-center sm:justify-between">
-                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" className="hover:underline">Cypher</a>. All Rights Reserved.
+                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" className="hover:underline">Cypher</a>. All Rights Reserved. Hello from Laptop
                 </span>
                 <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                     <a href="#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">
