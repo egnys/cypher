@@ -21,7 +21,7 @@ const Atbash = (props) => {
     return <div
         className="text-indigo-900 font-sans text-lg border-1 border-purple-600 rounded-lg m-10 p-5 shadow-xl bg-violet-50">
         <div className="border-b-2 border-purple-400 mb-2 pb-1">
-            <h2 className="text-2xl">{props.names[2].name}</h2>
+            <h2 className="text-2xl">{props.symNames[2].name}</h2>
         </div>
         <div className="flex items-center mb-2">
             <p className="mr-4">Оберіть алфавіт:</p>

@@ -14,7 +14,6 @@ const Navbar = () => {
             <div className="pr-8 md:block hidden">
                 <Link to='/' className="p-4 hover:border-b-4 hover:border-lime-300 hover:text-sky-400 transition delay-75">Головна</Link>
                 <Link to='/menu' className="p-4 hover:border-b-4 hover:border-lime-300 hover:text-sky-400 transition delay-75">Меню</Link>
-                <Link to='/about' className="p-4 hover:border-b-4 hover:border-lime-300 hover:text-sky-400 transition delay-75">Про</Link>
                 <Link to='/contacts' className="p-4 hover:border-b-4 hover:border-lime-300 hover:text-sky-400 transition delay-75">Контакти</Link>
             </div>
             

@@ -1,19 +1,27 @@
 import React, {useState} from 'react';
 import Select from "react-select";
+import Error from "../../Error";
 
-const Gronsfeld = (props) => {
+const Elgamal = (props) => {
     const [alphabet, setAlphabet] = useState("");
     const [encrMessage, setEMessage] = useState('');
     const [dencrMessage, setDMessage] = useState('');
-    const [k, setK] = useState('');
+    const [p, setP] = useState('');
     const [encryptedMessage, setEnc] = useState('')
     const [decryptedMessage, setDec] = useState('')
-
+    let checkerP = (p) => {
+        if (p === '') p = 1
+        if (typeof p !== "number"){
+            if (!props.isPrime(+p)){
+                return <Error numb={'p'}></Error>
+            }
+        }
+    }
     let encM = () => {
-        setEnc(props.encMess(encrMessage, alphabet, k))
+        setEnc(props.encMess(encrMessage, alphabet, p))
     }
     let decM = () => {
-        setDec(props.decMess(dencrMessage, alphabet, k))
+        setDec(props.decMess(dencrMessage, alphabet, p))
     }
     let handleChange = e => {
         setAlphabet(e.alphabet)
@@ -22,7 +30,7 @@ const Gronsfeld = (props) => {
     return <div
         className="text-indigo-900 font-sans text-lg border-1 border-purple-600 rounded-lg m-10 p-5 shadow-xl bg-violet-50">
         <div className="border-b-2 border-purple-400 mb-2 pb-1">
-            <h2 className="text-2xl">{props.symNames[5].name}</h2>
+            <h2 className="text-2xl">{props.asymNames[1].name}</h2>
         </div>
         <div className="flex items-center mb-2">
             <p className="mr-4">Оберіть алфавіт:</p>
@@ -43,9 +51,10 @@ const Gronsfeld = (props) => {
                                onChange={e => setEMessage(e.target.value.toUpperCase())}></input>
                     </div>
                     <div className="flex">
-                        <p className="mr-4">Ключове слово:</p>
-                        <input className="mb-2 w-48 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="k" value={k} onChange ={e => setK(e.target.value.toUpperCase())} placeholder='наприклад: 1234'></input>
+                        <p className="mr-4">Просте число p:</p>
+                        <input className="mb-2 w-24 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="p" value={p} onChange ={e => setP(e.target.value.toUpperCase())} placeholder='17'></input>
                     </div>
+                    {checkerP(p)}
                 </div>
                 <div className="flex flex-col mt-4">
                     <button
@@ -67,9 +76,10 @@ const Gronsfeld = (props) => {
                                onChange={e => setDMessage(e.target.value.toUpperCase())}></input>
                     </div>
                     <div className="flex">
-                        <p className="mr-4">Ключове слово:</p>
-                        <input className="mb-2 w-48 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="k" value={k} onChange ={e => setK(e.target.value.toUpperCase())} placeholder='наприклад: 1234'></input>
+                        <p className="mr-4">Просте число p: </p>
+                        <input className="mb-2 w-48 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="p" value={p} onChange ={e => setP(e.target.value.toUpperCase())} placeholder='17'></input>
                     </div>
+                    {checkerP(p)}
                 </div>
                 <div className="flex flex-col mt-4">
                     <button
@@ -86,4 +96,4 @@ const Gronsfeld = (props) => {
     </div>;
 };
 
-export default Gronsfeld;
+export default Elgamal;

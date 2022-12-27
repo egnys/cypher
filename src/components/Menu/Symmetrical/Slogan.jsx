@@ -22,7 +22,7 @@ const Slogan = (props) => {
     return <div
         className="text-indigo-900 font-sans text-lg border-1 border-purple-600 rounded-lg m-10 p-5 shadow-xl bg-violet-50">
         <div className="border-b-2 border-purple-400 mb-2 pb-1">
-            <h2 className="text-2xl">{props.names[3].name}</h2>
+            <h2 className="text-2xl">{props.symNames[3].name}</h2>
         </div>
         <div className="flex items-center mb-2">
             <p className="mr-4">Оберіть алфавіт:</p>
@@ -44,7 +44,7 @@ const Slogan = (props) => {
                     </div>
                     <div className="flex">
                         <p className="mr-4">Ключове слово:</p>
-                        <input className="mb-2 w-48 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="k" value={k} onChange ={e => setK(e.target.value.toUpperCase)} placeholder='наприклад: СОНЦЕ'></input>
+                        <input className="mb-2 w-48 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="k" value={k} onChange ={e => setK(e.target.value.toUpperCase())} placeholder='наприклад: СОНЦЕ'></input>
                     </div>
                 </div>
                 <div className="flex flex-col mt-4">
@@ -68,7 +68,7 @@ const Slogan = (props) => {
                     </div>
                     <div className="flex">
                         <p className="mr-4">Ключове слово: </p>
-                        <input className="mb-2 w-48 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="k" value={k} onChange ={e => setK(e.target.value.toUpperCase)} placeholder='наприклад: СОНЦЕ'></input>
+                        <input className="mb-2 w-48 bg-violet-50 outline-0 border-b-2 border-purple-400" type="text" name="k" value={k} onChange ={e => setK(e.target.value.toUpperCase())} placeholder='наприклад: СОНЦЕ'></input>
                     </div>
                 </div>
                 <div className="flex flex-col mt-4">
