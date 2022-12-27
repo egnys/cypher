@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cypher/static/css/main.de51d89a.css",
+    "main.js": "/cypher/static/js/main.cc71f874.js",
+    "static/media/vigener.png": "/cypher/static/media/vigener.78a44c7b7fd164c6fbd9.png",
+    "static/media/ceasar.png": "/cypher/static/media/ceasar.d90ef02b14d01de0a262.png",
+    "static/media/freq.png": "/cypher/static/media/freq.1b8ff40765b44d318f1e.png",
+    "static/media/symAndAsym.png": "/cypher/static/media/symAndAsym.27f14b8eab0b0da6ed93.png",
+    "static/media/Enigma.jpg": "/cypher/static/media/Enigma.820c4de137508a24698c.jpg",
+    "index.html": "/cypher/index.html",
+    "main.de51d89a.css.map": "/cypher/static/css/main.de51d89a.css.map",
+    "main.cc71f874.js.map": "/cypher/static/js/main.cc71f874.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de51d89a.css",
+    "static/js/main.cc71f874.js"
+  ]
+}
