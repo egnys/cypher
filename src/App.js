@@ -39,7 +39,7 @@ function App(props) {
                 <Route path='/rsa' element={<Rsa langs={props.langs} encMess={props.RSA_EncMess} decMess={props.RSA_DecMess} asymNames={props.asymNames} isPrime={isPrime}/>} />
                 <Route path='/elgamal' element={<Elgamal langs={props.langs} encMess={props.Elgamal_EncMess} decMess={props.Elgamal_DecMess} asymNames={props.asymNames} isPrime={isPrime}/>} />
             </Routes>
-            <Footer/>
+            
         </div>
     </div>
   );
