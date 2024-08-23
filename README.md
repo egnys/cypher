@@ -1,4 +1,4 @@
-https://egnys.github.io/cypher/ 
+cypher-xi.vercel.app
 
 With this application, you can encrypt text with the following methods: 
   - Caesar cipher; 
